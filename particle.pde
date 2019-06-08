@@ -96,7 +96,7 @@ class Particle {
   Calculate the BULGE force for the current particle.
   The BULGE force pushes the particle out in the direction of the normal when linked
   particles are closer than S, the link length. The strength of the 
-  BULGE force determined is by c3.
+  BULGE force is determined by c3.
   */
   PVector calcBulge() {
     PVector force = new PVector(0, 0, 0);
@@ -127,7 +127,7 @@ class Particle {
   The COLLISION force repels physically-close particles to avoid intersection, acting on
   pairs of unlinked particles that are closer than a fixed radius R. The magnitude of
   the force is proportional to the average of the inverse square of the distance. 
-  The strength of COLLISION force determined by c4.
+  The strength of COLLISION force is determined by c4.
   */
   PVector calcColl() {
     PVector force = new PVector(0, 0, 0);
