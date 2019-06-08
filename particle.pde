@@ -27,7 +27,7 @@ class Particle {
     age = 0;
     all.add(this);   
   }
-   //<>//
+  
   //Link two particles 
   void link(Particle toLink) {
     this.linked.add(toLink);
@@ -49,9 +49,11 @@ class Particle {
     }
   }
   
-  //Calculate the SPRING force for the current particle
-  
-  //Strength of force determined by c1
+  /*
+  Calculate the SPRING force for the current particle.
+  The SPRING force acts as a linear spring aiming to maintain a fixed distance S
+  between linked cells. The strength of the SPRING force is determined by c1.
+  */
   PVector calcSpring() {
     PVector force = new PVector(0, 0, 0);
     if (this.linked.size()==0) {
@@ -70,9 +72,12 @@ class Particle {
     }
   }
 
-  //Calculate the PLANAR force for the current particle
-  
-  //Strength of force determined by c2
+  /*
+  Calculate the PLANAR force for the current particle.
+  The PLANAR force pushes the particle towards the average position of its linked
+  neighbors, encouraging the mesh to return to a locally planar state. 
+  The strength of the PLANAR force determined by c2.
+  */
   PVector calcPlanar() {
     PVector force = new PVector(0, 0, 0);
     if (this.linked.size()==0) {
@@ -87,9 +92,12 @@ class Particle {
     }
   }
 
-  //Calculate the BULGE force for the current particle
-  
-  //Strength of force determined by c3
+  /*
+  Calculate the BULGE force for the current particle.
+  The BULGE force pushes the particle out in the direction of the normal when linked
+  particles are closer than S, the link length. The strength of the 
+  BULGE force determined is by c3.
+  */
   PVector calcBulge() {
     PVector force = new PVector(0, 0, 0);
     if (this.linked.size()==0) {
@@ -114,9 +122,13 @@ class Particle {
     }
   }
 
-  //Calculate the COLLISION force for the current particle
-  
-  //Strength of force determined by c4
+  /*
+  Calculate the COLLISION force for the current particle.
+  The COLLISION force repels physically-close particles to avoid intersection, acting on
+  pairs of unlinked particles that are closer than a fixed radius R. The magnitude of
+  the force is proportional to the average of the inverse square of the distance. 
+  The strength of COLLISION force determined by c4.
+  */
   PVector calcColl() {
     PVector force = new PVector(0, 0, 0);
     Set<Particle> C = new HashSet<Particle>();
@@ -215,7 +227,7 @@ class Particle {
     }
   }
 
-  //Return indices of particles along shortest axis on ring
+  //Return indices of the particles along the shortest axis on the ring
   int [] getShort(ArrayList<Particle> thing) {
     ArrayList<Particle> ring = thing;
     int [] index = new int[2];
@@ -234,7 +246,7 @@ class Particle {
     return index;
   }
 
-  //Split the ring around the current particles into 2 rings along the shortest axis
+  //Split the ring around the current particle into 2 rings along the shortest axis
   //Creates new particle
   void split() {
     ArrayList<Particle> ring = getRing();
