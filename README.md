@@ -4,10 +4,11 @@ This project aims to model an evolving system of cells that undergo mitosis and 
 ![](gof1.gif)
 
 ### Initial State
-
-### Mitosis
+Each form begins as a collection of particles, each with a position *p* and normal *n* in *R^3*.
 
 ### Forces
+
+### Mitosis
 
 ### Parameters
 
