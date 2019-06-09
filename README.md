@@ -9,6 +9,11 @@ The organic forms begin as collections of 20 [particles](particle.pde) **P**, ea
 
 
 ## Forces
+
+Each particle's position is [updated](generate.pde) at every timestep. The following four forces are calculated for each particle, multipled by scalers, and added together to inform the particle's new position.
+
+![](/equations/eq5.jpg)
+
 ### Spring
 The spring force acts as a linear spring aiming to maintain a fixed distance **S**
 between linked particles. The displacement due to the spring force is
@@ -40,11 +45,6 @@ particles not linked to the current particle, yet closer than **R** to the curre
 
 ![](/equations/eq4.2.jpg)
 
-## Generation  
-
-Each particle's position is [updated](generate.pde) at every timestep. The four forces are multipled by scalers and added together to inform the particle's new position.
-
-![](/equations/eq5.jpg)
 
 ## Mitosis
 
