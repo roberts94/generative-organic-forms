@@ -40,7 +40,7 @@ particles not linked to the current particle, yet closer than **R** to the curre
 
 ![](/equations/eq4.2.jpg)
 
-###  
+## Generation  
 
 Each particle's position is [updated](generate.pde) at every timestep. The four forces are multipled by scalers and added together to inform the particle's new position.
 
