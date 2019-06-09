@@ -74,6 +74,6 @@ The search space for ideal growth is huge since there are so many parameters. I 
 
 **splitProb**(=0.03): the probability that a particle (that's reached threshold) will split at each timestep.
 
-## WATCH
+## Result:
 
 ![](gof1.gif)
