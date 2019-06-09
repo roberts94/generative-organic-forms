@@ -8,21 +8,21 @@ The form begins as a collection of 20 [particles](particle.pde) **P**, each with
 ![](icos.png)
 
 
-### Forces
-#### SPRING
+## Forces
+### SPRING
 ![](/equations/eq1.jpg)
-#### PLANAR
+### PLANAR
 ![](/equations/eq2.jpg)
-#### BULGE
+### BULGE
 ![](/equations/eq3.jpg)
-#### COLLISION
+### COLLISION
 ![](/equations/eq4.jpg)
 
 
-### Mitosis
+## Mitosis
 
-### Parameters
+## Parameters
 
-### Conclusion
+## Conclusion
 
 
