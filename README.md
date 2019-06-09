@@ -58,18 +58,18 @@ Once a particle's nutrient level reaches a set threshold, it will split along th
 
 The search space for ideal growth is huge since there are so many parameters. I will include the parameters used to create the following GIF, but many more patterns are possible. I encourage you to play around with **c1** - **c4** especially.
 
-**S**=1.1: the "resting" distance between particles. The spring force aims to keep all particles this distance from each other.
+**S**(=1.1): the "resting" distance between particles. The spring force aims to keep all particles this distance from each other.
 
-**R**=10: the minimum collision distance. The collision force acts on all unlinked particles within this distance from each other.
+**R**(=10): the minimum collision distance. The collision force acts on all unlinked particles within this distance from each other.
 
-**c1**=0.1: the scalar to determine the strength of the *spring* force.
+**c1**(=0.1): the scalar to determine the strength of the *spring* force.
 
-**c2**=0.005: the scalar to determine the strength of the *planar* force.
+**c2**(=0.005): the scalar to determine the strength of the *planar* force.
 
-**c3**=0.01: the scalar to determine the strength of the *bulge* force.
+**c3**(=0.01): the scalar to determine the strength of the *bulge* force.
 
-**c4**=0.1: the scalar to determine the strength of the *collision* force.
+**c4**(=0.1): the scalar to determine the strength of the *collision* force.
 
-**threshold**=20: the minimum nutrient level of a particle before the chance of splitting.
+**threshold**(=20): the minimum nutrient level of a particle before the chance of splitting.
 
-**splitProb**=0.03: the probability that a particle (that's reached threshold) will split at each timestep.
+**splitProb**(=0.03): the probability that a particle (that's reached threshold) will split at each timestep.
