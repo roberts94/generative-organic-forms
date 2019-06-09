@@ -49,7 +49,9 @@ Each particle's position is updated at every timestep. The four forces are multi
 ## Mitosis
 
 Each particle contains an internal nutrient level. It starts at 0, and is incremented by 1 at each timestep. 
-Once a particle's nutrient level reaches a set threshold, it will split along the shortest axis of diametrically opposed linked particles. A new particle is added added to the system and both the parent and child particle's nutrient levels are reset to 0.
+Once a particle's nutrient level reaches a set threshold, it will split along the shortest axis of diametrically opposed particles in **L**. A new particle is added added to the system and both the parent and child particle's nutrient levels are reset to 0.
+
+![](/figures/mitosis.png)
 
 
 
