@@ -37,6 +37,7 @@ The collision force repels physically close particles to avoid intersection, act
 pairs of unlinked particles that are closer than a fixed radius **R**. The magnitude of
 the force is proportional to the average of the inverse square of the distance. Define **C** to be the collection of 
 particles not linked to the current particle, yet closer than **R** to the current particle.
+
 ![](/equations/eq4.jpg)
 
 
