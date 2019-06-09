@@ -1,2 +1,3 @@
 # generative-organic-forms
-![](gof1_small.gif) ![](gof3_small.gif)
+![](gof1.gif)
+![](gof2.gif)
