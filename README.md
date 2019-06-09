@@ -9,24 +9,31 @@ The form begins as a collection of 20 [particles](particle.pde) **P**, each with
 
 
 ## Forces
-The **SPRING** force acts as a linear spring aiming to maintain a fixed distance **S**
+### Spring
+The spring force acts as a linear spring aiming to maintain a fixed distance **S**
 between linked cells. Every timestep the displacement due to the spring force is
 calculated as the average of these linear springs.
+
 ![](/equations/eq1.jpg)
 
-The **PLANAR** force pushes the particle towards the average position of its linked
+### Planar
+The planar force pushes the particle towards the average position of its linked
 neighbors, encouraging the mesh to return to a locally planar state.
+
 ![](/equations/eq2.jpg)
 
-The **BULGE** force pushes the particle out in the direction of the normal when linked
+### Bulge 
+The bulge force pushes the particle out in the direction of the normal when linked
 particles are closer than **S**, the link length. The magnitude of the bulge force is
 how far, on average, the particle would have to move along the normal to allow the links to
 return to an uncompressed state. For each linked particle i ∈ **L**, let **θ** be defined
 as the angle between points **p**, **p_i**, and **t**; where **t** is the point **S** distance from **p_i**
 along **n**.
+
 ![](/equations/eq3.jpg)
 
-The **COLLISION** force repels physically close particles to avoid intersection, acting on
+### Collision
+The collision force repels physically close particles to avoid intersection, acting on
 pairs of unlinked particles that are closer than a fixed radius **R**. The magnitude of
 the force is proportional to the average of the inverse square of the distance. Define **C** to be the collection of 
 particles not linked to the current particle, yet closer than **R** to the current particle.
