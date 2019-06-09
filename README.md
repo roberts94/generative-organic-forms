@@ -4,7 +4,7 @@ This project aims to model an evolving system of cells that undergo mitosis and 
 ![](/figures/gof_still.png)
 
 ## Initial State
-The forms begin as collections of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedral mesh](icosahedron.pde) with the particles as vertices and links as edges. 
+The organic forms begin as collections of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedral mesh](icosahedron.pde) with the particles as vertices and links as edges. 
 ![](icos.png)
 
 
