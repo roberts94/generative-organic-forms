@@ -9,11 +9,15 @@ The form begins as a collection of 20 [particles](particle.pde) **P**, each with
 
 
 ### Forces
-##### Spring
+#### SPRING
 ![](/equations/eq1.jpg)
-##### Planar
-##### Collision
-##### Bulge
+#### PLANAR
+![](/equations/eq2.jpg)
+#### BULGE
+![](/equations/eq3.jpg)
+#### COLLISION
+![](/equations/eq4.jpg)
+
 
 ### Mitosis
 
