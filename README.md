@@ -40,6 +40,9 @@ particles not linked to the current particle, yet closer than **R** to the curre
 
 ![](/equations/eq4.2.jpg)
 
+Each particle's position is updated at every timestep. The four forces are multipled by scalers and added together to inform the particle's next position.
+
+![](/equations/eq5.jpg)
 
 ## Mitosis
 
