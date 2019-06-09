@@ -10,7 +10,7 @@ The form begins as a collection of 20 [particles](particle.pde) **P**, each with
 
 ### Forces
 ##### Spring
-[img]http://bit.ly/2KEP8qq[/img]
+
 ##### Planar
 ##### Collision
 ##### Bulge
