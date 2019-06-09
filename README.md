@@ -40,9 +40,9 @@ particles not linked to the current particle, yet closer than **R** to the curre
 
 ![](/equations/eq4.2.jpg)
 
-## 
+###  
 
-Each particle's position is updated at every timestep. The four forces are multipled by scalers and added together to inform the particle's next position.
+Each particle's position is updated at every timestep. The four forces are multipled by scalers and added together to inform the particle's new position.
 
 ![](/equations/eq5.jpg)
 
@@ -54,9 +54,13 @@ Once a particle's nutrient level reaches a set threshold, it will split along th
 ![](/figures/mitosis.png)
 
 
-
 ## Parameters
 
-## Conclusion
-
-
+**S**: the "resting" distance between particles. The spring force aims to keep all particles this distance from each other.
+**R**: the minimum collision distance. The collision force acts on all unlinked particles within this distance from each other.
+**c1**: the scalar to determine the strength of the *spring* force.
+**c2**: the scalar to determine the strength of the *planar* force.
+**c3**: the scalar to determine the strength of the *bulge* force.
+**c4**: the scalar to determine the strength of the *collision* force.
+**threshold**: the minimum nutrient level of a particle before the chance of splitting.
+**splitProb**: the probability that a particle (that's reached threshold) will split at each timestep.
