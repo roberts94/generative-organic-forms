@@ -4,7 +4,7 @@ This project aims to model an evolving system of cells that undergo mitosis and 
 ![](/figures/gof_still.png)
 
 ## Initial State
-The form begins as a collection of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedral mesh](icosahedron.pde) with the particles as vertices and linkages as edges. 
+The forms begin as collections of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedral mesh](icosahedron.pde) with the particles as vertices and links as edges. 
 ![](icos.png)
 
 
@@ -48,8 +48,8 @@ Each particle's position is updated at every timestep. The four forces are multi
 
 ## Mitosis
 
-Each particle contains an internal nutrient level. It starts at 0, and is incremented by 1 at each timestep. 
-Once a particle's nutrient level reaches a set threshold, it will split along the shortest axis of diametrically opposed particles in **L**. A new particle is added added to the system and both the parent and child particle's nutrient levels are reset to 0.
+Each particle contains an internal nutrient level. It begins set to 0, and is incremented by 1 at each timestep. 
+Once a particle's nutrient level reaches a set threshold, it will split along the shortest axis of diametrically opposed particles in **L**. A new particle is added to the system and both the parent and child particle's nutrient levels are reset to 0.
 
 ![](/figures/mitosis.png)
 
