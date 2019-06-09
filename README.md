@@ -38,7 +38,7 @@ pairs of unlinked particles that are closer than a fixed radius **R**. The magni
 the force is proportional to the average of the inverse square of the distance. Define **C** to be the collection of 
 particles not linked to the current particle, yet closer than **R** to the current particle.
 
-![](/equations/eq4.jpg)
+![](/equations/eq4.2.jpg)
 
 
 ## Mitosis
