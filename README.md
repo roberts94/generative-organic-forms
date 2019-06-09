@@ -72,7 +72,7 @@ The search space for ideal growth is huge since there are so many parameters. I 
 
 **threshold**(=20): the minimum nutrient level of a particle before the chance of splitting.
 
-**splitProb**(=0.03): the probability that a particle (that's reached threshold) will split at each timestep.
+**splitProb**(=0.03): the probability that a particle over the nutrient threshold will split at each timestep.
 
 ## Sample Result:
 
