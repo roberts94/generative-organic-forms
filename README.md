@@ -4,14 +4,14 @@ This project aims to model an evolving system of cells that undergo mitosis and 
 ![](gof1.gif)
 
 ## Initial State
-The form begins as a collection of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedron](icosahedron.pde) with the particles as vertices and linkages as edges. 
+The form begins as a collection of 20 [particles](particle.pde) **P**, each with a position **p** and normal **n** in **R^3**, along with a set of linked particles **L**. They are arranged into an [icosahedral mesh](icosahedron.pde) with the particles as vertices and linkages as edges. 
 ![](icos.png)
 
 
 ## Forces
 ### Spring
 The spring force acts as a linear spring aiming to maintain a fixed distance **S**
-between linked cells. Every timestep the displacement due to the spring force is
+between linked particles. The displacement due to the spring force is
 calculated as the average of these linear springs.
 
 ![](/equations/eq1.jpg)
@@ -27,7 +27,7 @@ The bulge force pushes the particle out in the direction of the normal when link
 particles are closer than **S**, the link length. The magnitude of the bulge force is
 how far, on average, the particle would have to move along the normal to allow the links to
 return to an uncompressed state. For each linked particle i ∈ **L**, let **θ** be defined
-as the angle between points **p**, **p_i**, and **t**; where **t** is the point **S** distance from **p_i**
+as the angle between points **p**, **p_i**, and **t**; where **t** is the point **S** distance away from **p_i**
 along **n**.
 
 ![](/equations/eq3.jpg)
@@ -40,11 +40,18 @@ particles not linked to the current particle, yet closer than **R** to the curre
 
 ![](/equations/eq4.2.jpg)
 
+## 
+
 Each particle's position is updated at every timestep. The four forces are multipled by scalers and added together to inform the particle's next position.
 
 ![](/equations/eq5.jpg)
 
 ## Mitosis
+
+Each particle contains an internal nutrient level. It starts at 0, and is incremented by 1 at each timestep. 
+Once a particle's nutrient level reaches a set threshold, it will split along the shortest axis of diametrically opposed linked particles. A new particle is added added to the system and both the parent and child particle's nutrient levels are reset to 0.
+
+
 
 ## Parameters
 
