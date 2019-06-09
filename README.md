@@ -4,9 +4,14 @@ This project aims to model an evolving system of cells that undergo mitosis and 
 ![](gof1.gif)
 
 ### Initial State
-Each form begins as a collection of particles, each with a position *p* and normal *n* in *R^3*.
+Each form begins as a collection of 20 particles **P**, each with a position **p** and normal **n** in **R^3**, and a set of linked particles **L**. They are arranged into an [icosahedron](icosahedron.pde) with edges representing linkages.
+
 
 ### Forces
+##### Spring
+##### Planar
+##### Collision
+##### Bulge
 
 ### Mitosis
 
