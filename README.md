@@ -79,6 +79,7 @@ The search space for ideal growth is huge since there are so many parameters. I 
 
 **splitProb** (=0.03): the probability that a particle over the nutrient threshold will split at each timestep.
 
-## Sample Animation:
+## Sample Animations
 
 ![](/figures/gof1.gif)
+![](/figures/gof2.gif)
