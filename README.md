@@ -10,7 +10,7 @@ The organic form begins as a collection of 20 [particles](particle.pde), each wi
 
 ## Forces
 
-Each particle's position is [updated](generate.pde) at every timestep. The following four forces are calculated for each particle, multipled by scalers, and summed together to inform the particle's new position.
+Each particle's position is [updated](generate.pde) at every timestep. The following four forces are calculated for each particle, multipled by scalars, and summed together to inform the particle's new position.
 
 ![](/equations/eq5.jpg)
 
